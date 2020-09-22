@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function maxarray(arr) {
+        let max = arr[0];
+        for (let i = 1; i <= arr.length - 1; i++) {
+            if (max < arr[i])
+                max = arr[i]
+
+        }
+        return max;
+    }
+
+    let arr1 = [];
+    for (let i = 0; i < 3; i++) {
+        let num = +prompt("nhap num");
+        arr1.push(num);
+    }
+    alert(maxarray(arr1));
+</script>
+</html>

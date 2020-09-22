@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>nhap nam</p><input type="date" id="year">
+<p id="result"></p>
+<button type="button" onclick="myfunction()">click</button>
+</body>
+<script>
+    function myfunction() {
+        let arr = [document.getElementById("year").value];
+        let x = parseInt(arr.pop());
+        document.getElementById("result").innerHTML = (2020 - x) + " tuoi";
+    }
+</script>
+</html>
